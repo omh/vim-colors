@@ -312,6 +312,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("phpMemberSelector", s:foreground, "", "")
 	call <SID>X("phpSpecialFunction", s:yellow, "", "")
 	call <SID>X("phpParent", s:comment, "", "")
+	call <SID>X("doxygenComment", s:comment, "", "")
+	call <SID>X("doxygenBrief", s:comment, "", "")
+	call <SID>X("doxygenBody", s:comment, "", "")
+	call <SID>X("doxygenSpecialMultilineDesc", s:comment, "", "")
+	call <SID>X("doxygenSpecialTypeOnelineDesc", s:comment, "", "")
+	call <SID>X("doxygenParamName", s:comment, "", "")
+
+	call <SID>X("doxygenParam", s:orange, "", "")
+	call <SID>X("doxygenOther", s:orange, "", "")
 
 	" Ruby Highlighting
 	call <SID>X("rubyModule", s:orange, "", "")
