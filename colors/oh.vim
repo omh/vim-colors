@@ -293,6 +293,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	"call <SID>X("Ignore", "666666", "", "")
+    call <SID>X("Folded", "", s:line, "none")
 
 	" Vim Highlighting
 	call <SID>X("vimCommand", s:red, "", "none")
@@ -311,6 +312,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("phpStatement", s:purple, "", "")
 	call <SID>X("phpMemberSelector", s:foreground, "", "")
 	call <SID>X("phpSpecialFunction", s:yellow, "", "")
+	call <SID>X("phpFunctions", s:yellow, "", "")
 	call <SID>X("phpParent", s:comment, "", "")
 
 	" Ruby Highlighting
