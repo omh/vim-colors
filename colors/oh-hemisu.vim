@@ -106,9 +106,9 @@ endif
 " Highlights - UI ------------------------------------------{{{
 call s:h("Normal",       { "fg": s:norm, "bg": s:bg })
 call s:h("NonText",      { "fg": s:subtle })
-call s:h("Cursor",       { "fg": s:norm, "bg": s:faintBlue })
+call s:h("Cursor",       { "fg": s:bg, "bg": s:middleLightPink})
 call s:h("Visual",       { "bg": s:faintBlue })
-call s:h("IncSearch",    { "fg": s:norm, "bg": s:faintBlue })
+call s:h("IncSearch",    { "fg": s:norm, "bg": s:middleLightPink})
 call s:h("Search",       { "fg": s:norm, "bg": s:faintBlue })
 call s:h("StatusLine",   { "fg": s:norm, "bg": s:faint2, "gui": "bold", "cterm": "bold" })
 call s:h("StatusLineNC", { "fg": s:dimmed, "bg": s:faint2 })
