@@ -230,6 +230,11 @@ call s:h("CtrlPLinePre", { "fg": s:subtle, "gui": "bold"})
 call s:h("CtrlPMatch", { "fg": s:almostWhite, "bg": s:faintBlue, "gui": "bold"})
 "}}}
 
+" Highlights - NERDTree ----------------------------------{{{
+hi link NERDTreeBookmark Delimiter
+hi link NERDTreeBookmarkName Identifier
+"}}}
+
 " Highlights - Help ----------------------------------------{{{
 hi! link helpExample	String
 hi! link helpHeadline	Title
