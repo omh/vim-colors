@@ -226,8 +226,8 @@ hi link doxygenSpecialMultilineDesc Comment
 "}}}
 
 " Highlights - CtrlP ----------------------------------{{{
-call s:h("CtrlPLinePre", { "fg": s:darkGrey, "gui": "bold"})
-hi! link CtrlPPrtBase Keyword
+call s:h("CtrlPLinePre", { "fg": s:subtle, "gui": "bold"})
+call s:h("CtrlPMatch", { "fg": s:almostWhite, "bg": s:faintBlue, "gui": "bold"})
 "}}}
 
 " Highlights - Help ----------------------------------------{{{
