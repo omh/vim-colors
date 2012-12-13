@@ -171,6 +171,8 @@ hi! link cssClassName	Normal
 "}}}
 " Highlights - Markdown ------------------------------------{{{
 hi! link mkdListItem	mkdDelimiter
+hi! link markdownCode	Function
+hi! link markdownCodeBlock	Function
 
 "}}}
 " Highlights - Shell ---------------------------------------{{{
