@@ -166,7 +166,31 @@ hi! link htmlEndTag	htmlTag
 " Highlights - CSS -----------------------------------------{{{
 hi! link cssBraces	Delimiter
 hi! link cssSelectorOp	cssBraces
-hi! link cssClassName	Normal
+hi! link cssClassName Function
+hi! link cssDefinition Identifier
+hi! link cssFontProp Identifier
+hi! link cssFontAttr Identifier
+hi! link cssCommonAttr Identifier
+hi! link cssFontDescriptorProp Identifier
+hi! link cssFontDescriptorAttr Identifier
+hi! link cssColorProp Identifier
+hi! link cssColorAttr Identifier
+hi! link cssTextProp Identifier
+hi! link cssTextAttr Identifier
+hi! link cssBoxProp Identifier
+hi! link cssBoxAttr Identifier
+hi! link cssGeneratedContentProp Identifier
+hi! link cssGeneratedContentAttr Identifier
+hi! link cssAuralAttr Identifier
+hi! link cssPagingProp Identifier
+hi! link cssPagingAttr Identifier
+hi! link cssUIProp Identifier
+hi! link cssUIAttr Identifier
+hi! link cssRenderAttr Identifier
+hi! link cssRenderProp Identifier
+hi! link cssAuralProp Identifier
+hi! link cssTableProp Identifier
+hi! link cssTableAttr Identifier
 
 "}}}
 " Highlights - Markdown ------------------------------------{{{
@@ -204,8 +228,13 @@ hi link doxygenSpecialMultilineDesc Comment
 "}}}
 
 " Highlights - CtrlP ----------------------------------{{{
-call s:h("CtrlPLinePre", { "fg": s:darkGrey, "gui": "bold"})
-hi! link CtrlPPrtBase Keyword
+call s:h("CtrlPLinePre", { "fg": s:subtle, "gui": "bold"})
+call s:h("CtrlPMatch", { "fg": s:almostWhite, "bg": s:faintBlue, "gui": "bold"})
+"}}}
+
+" Highlights - NERDTree ----------------------------------{{{
+hi link NERDTreeBookmark Delimiter
+hi link NERDTreeBookmarkName Identifier
 "}}}
 
 " Highlights - Help ----------------------------------------{{{
