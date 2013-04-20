@@ -46,6 +46,10 @@ let s:lightGreen=      { "gui": "#BBFFAA", "cterm": "157" }
 let s:darkTan=         { "gui": "#503D15", "cterm": "52"  }
 let s:lightTan=        { "gui": "#ECE1C8", "cterm": "230" }
 
+" Borrowed from Smyck
+let s:yellow = { "gui": "#F6DC69", "cterm": "3" }
+let s:green = { "gui": "#D1FA71", "cterm": "10" }
+
 " Assign to semantic categories based on background color
 " Dark theme
 let s:bg=s:black
@@ -56,8 +60,10 @@ let s:subtle=s:darkGrey
 let s:faint=s:almostBlack
 let s:faint2=s:almostBlack
 let s:accent1=s:middleLightBlue
-let s:accent2=s:middleLightGreen
-let s:accent3=s:lightGreen
+"let s:accent2=s:middleLightGreen
+let s:accent2=s:yellow
+"let s:accent3=s:lightGreen
+let s:accent3=s:green
 let s:accent4=s:lightTan
 let s:normRed=s:middleLightPink
 let s:normGreen=s:middleLightGreen
@@ -120,9 +126,9 @@ call s:h("Folded",       { "fg": s:comment, "bg": s:faint2 })
 call s:h("Directory",    { "fg": s:accent1 })
 call s:h("Title",        { "fg": s:accent4, "gui": "bold", "cterm": "bold" })
 call s:h("ErrorMsg",     { "fg": s:normRed})
-call s:h("DiffAdd",      { "bg": s:faintGreen })
-call s:h("DiffChange",   { "bg": s:faintRed })
-call s:h("DiffDelete",   { "fg": s:normRed, "bg": s:faintRed })
+call s:h("DiffAdd",      { "fg": s:normGreen })
+call s:h("DiffChange",   { "fg": s:normBlue })
+call s:h("DiffDelete",   { "fg": s:normRed })
 call s:h("DiffText",     { "bg": s:faintRed, "gui": "bold", "cterm": "bold" })
 call s:h("User1",        { "fg": s:bg, "bg": s:normGreen })
 call s:h("User2",        { "fg": s:bg, "bg": s:normRed })
@@ -237,6 +243,14 @@ hi link NERDTreeBookmark Delimiter
 hi link NERDTreeBookmarkName Identifier
 "}}}
 
+" Highlights - Diff ----------------------------------------{{{
+hi! link diffRemoved DiffDelete
+hi! link diffAdded DiffAdd
+hi! link diffFile Type
+hi! link diffLine Type
+
+"}}}
+
 " Highlights - Help ----------------------------------------{{{
 hi! link helpExample	String
 hi! link helpHeadline	Title
@@ -250,6 +264,11 @@ hi! link helpURL	Underlined
 " Highlights - ShowMarker -----------------------------------{{{
 call s:h("ShowMarksHLl", { "fg": s:darkPink, "gui": "bold" })
 call s:h("ShowMarksHLo", { "fg": s:bg })
+
+" }}}
+
+" Highlights - eZ Publish -----------------------------------{{{
+hi! link ezpConditional Keyword
 
 " }}}
 
