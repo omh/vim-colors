@@ -19,14 +19,14 @@ let g:colors_name="oh-hemisu"
 "}}}
 " The Colors -----------------------------------------------{{{
 " Define reusable colors
-let s:black=           { "gui": "#1C1C1C", "cterm": "16"  }
+let s:black=           { "gui": "#1C1C1C", "cterm": "234" }
 let s:white=           { "gui": "#FFFFFF", "cterm": "231" }
 let s:almostWhite=     { "gui": "#EEEEEE", "cterm": "255" }
 let s:almostBlack=     { "gui": "#111111", "cterm": "233" }
 let s:middleDarkGrey=  { "gui": "#777777", "cterm": "241" }
 let s:middleLightGrey= { "gui": "#999999", "cterm": "246" }
 let s:lightGrey=       { "gui": "#BBBBBB", "cterm": "249" }
-let s:darkGrey=        { "gui": "#444444", "cterm": "238" }
+let s:darkGrey=        { "gui": "#444444", "cterm": "237" }
 
 let s:darkPink=        { "gui": "#63001C", "cterm": "88"  }
 let s:middleDarkPink=  { "gui": "#FF0055", "cterm": "197" }
@@ -48,7 +48,7 @@ let s:lightTan=        { "gui": "#ECE1C8", "cterm": "230" }
 
 " Borrowed from Smyck
 let s:yellow = { "gui": "#F6DC69", "cterm": "3" }
-let s:green = { "gui": "#D1FA71", "cterm": "10" }
+let s:green = { "gui": "#D1FA71", "cterm": "155" }
 
 " Assign to semantic categories based on background color
 " Dark theme
