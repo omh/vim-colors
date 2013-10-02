@@ -27,6 +27,7 @@ let s:middleDarkGrey=  { "gui": "#777777", "cterm": "241" }
 let s:middleLightGrey= { "gui": "#999999", "cterm": "246" }
 let s:lightGrey=       { "gui": "#BBBBBB", "cterm": "249" }
 let s:darkGrey=        { "gui": "#444444", "cterm": "237" }
+let s:darkdarkGrey=    { "gui": "#444444", "cterm": "235" }
 
 let s:darkPink=        { "gui": "#63001C", "cterm": "88"  }
 let s:middleDarkPink=  { "gui": "#FF0055", "cterm": "197" }
@@ -88,7 +89,7 @@ endfunction
 "}}}
 " Highlights - Vim >= 7 ------------------------------------{{{
 if version >= 700
-	call s:h("CursorLine",  { "bg": s:faintBlue})
+	call s:h("CursorLine",  { "bg": s:darkdarkGrey})
 	call s:h("MatchParen",  { "fg": s:accent1, "bg": s:faint2, "gui": "bold" })
 	call s:h("Pmenu",       { "fg": s:almostWhite, "bg": s:subtle})
 	call s:h("PmenuThumb",  { "bg": s:subtle })
