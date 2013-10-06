@@ -90,6 +90,7 @@ endfunction
 " Highlights - Vim >= 7 ------------------------------------{{{
 if version >= 700
 	call s:h("CursorLine",  { "bg": s:darkdarkGrey})
+	call s:h("CursorLineNr",{ "fg": s:lightTan, "bg": s:darkdarkGrey})
 	call s:h("MatchParen",  { "fg": s:accent1, "bg": s:faint2, "gui": "bold" })
 	call s:h("Pmenu",       { "fg": s:almostWhite, "bg": s:subtle})
 	call s:h("PmenuThumb",  { "bg": s:subtle })
