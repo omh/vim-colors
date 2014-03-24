@@ -56,7 +56,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "hybrid"
+let colors_name = "oh-hybrid"
 
 "}}}
 " GUI And Cterm Palettes:"{{{
@@ -283,7 +283,7 @@ endif
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
-exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
+exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_ital
 
 exe "hi! Constant"        .s:fg_red         .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
