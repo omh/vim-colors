@@ -83,7 +83,7 @@ endif
 " - g:jellybeans_use_gui_italics    (default = 1)
 " - g:jellybeans_use_term_italics   (default = 0)
 
-let s:background_color = "252525"
+let s:background_color = "262626"
 
 if exists("g:jellybeans_overrides")
   let s:overrides = g:jellybeans_overrides
@@ -460,7 +460,7 @@ call s:X("Todo","c7c7c7","","bold","White",s:termBlack)
 
 call s:X("StatusLine","8197bf","403c41","italic","","White")
 call s:X("StatusLineNC","666666","403c41","italic","White","Black")
-call s:X("VertSplit","151515","151515","",s:termBlack,s:termBlack)
+call s:X("VertSplit","444444",s:background_color,"",s:termBlack,s:termBlack)
 call s:X("WildMenu","f0a0c0","302028","","Magenta","")
 
 call s:X("Folded","a0a8b0","384048","italic",s:termBlack,"")
